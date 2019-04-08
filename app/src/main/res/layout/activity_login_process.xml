@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginProcessActivity">
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="#000"
+        android:textColor="#D3D3D3"
+        app:strokeWidth="2dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Admin Login"
+        android:id="@+id/adminLoginBtn"
+        />
+    <android.support.design.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#D3D3D3"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:strokeColor="#000"
+        app:strokeWidth="2dp"
+        android:text="User Login"
+        android:id="@+id/userLoginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/adminLoginBtn"
+        />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userreg"
+    tools:context=".SignupActivity" >
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    tools:context=".SignupActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_reg"
+        android:text="User Registration"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textSize="32sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/TIL_STD_NAME"
+        android:textStyle="bold"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_reg"
+        android:id="@+id/TIL_STD_NAME"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_studentName"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Enter Student Name"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintBottom_toTopOf="@id/TIL_STD_PINNO"
+        app:layout_constraintTop_toBottomOf="@id/TIL_STD_NAME"
+        android:id="@+id/TIL_STD_ROLLNO"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_studentRollNo"
+            android:inputType="number"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Enter Student Roll No"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintBottom_toTopOf="@id/TIL_STD_EMAIL"
+        android:id="@+id/TIL_STD_PINNO"
+        app:layout_constraintTop_toBottomOf="@id/TIL_STD_ROLLNO"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_studentPinNo"
+            android:inputType="number"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Enter Student Pin No"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintBottom_toTopOf="@id/TIL_STD_PASS"
+        app:layout_constraintTop_toBottomOf="@id/TIL_STD_PINNO"
+        android:id="@+id/TIL_STD_EMAIL"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_studentEmail"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Enter Student Email"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintBottom_toTopOf="@id/TIL_STD_CPASS"
+        app:layout_constraintTop_toBottomOf="@id/TIL_STD_EMAIL"
+        android:id="@+id/TIL_STD_PASS"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_studentPassword"
+            android:inputType="textPassword"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Enter Password"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:layout_constraintBottom_toTopOf="@id/signupRegBtn"
+        app:layout_constraintTop_toBottomOf="@id/TIL_STD_PASS"
+        android:id="@+id/TIL_STD_CPASS"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edittext_studentConfirmPassword"
+            android:inputType="textPassword"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:hint="Enter Confirm Password"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_margin="4dp"
+        android:id="@+id/signupRegBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TIL_STD_CPASS"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>
+</ScrollView>

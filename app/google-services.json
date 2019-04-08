@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "1060283233943",
+    "firebase_url": "https://librarymanagementsystem-e061c.firebaseio.com",
+    "project_id": "librarymanagementsystem-e061c",
+    "storage_bucket": "librarymanagementsystem-e061c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060283233943:android:d97a6ae5a770ec39",
+        "android_client_info": {
+          "package_name": "com.example.nikhil.librarymanagementsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1OZoSUpcRvfmJ_p1b2sXqHW9UdcKSXBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060283233943-grp510d1458c0dr228p2ptfuapeja83b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".AddBooksActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/TIL_BOOK_ID"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_text_book_id"
+            android:hint="Enter Book ID"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TIL_BOOK_TITLE"
+        app:layout_constraintTop_toBottomOf="@id/TIL_BOOK_ID"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_text_book_title"
+            android:hint="Enter Book Title"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TIL_BOOK_AUTHOR"
+        app:layout_constraintTop_toBottomOf="@id/TIL_BOOK_TITLE"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_text_book_author"
+            android:hint="Enter Book Author Name"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TIL_BOOK_QTY"
+        app:layout_constraintTop_toBottomOf="@id/TIL_BOOK_AUTHOR"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_text_book_qty"
+            android:hint="Enter Book Quantity"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TIL_BOOK_COST"
+        app:layout_constraintTop_toBottomOf="@id/TIL_BOOK_QTY"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_text_book_cost"
+            android:hint="Enter Book Cost"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/TIL_BOOK_COST"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <android.support.design.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addBtn"
+        android:layout_marginBottom="16dp"
+        android:text="Add"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
